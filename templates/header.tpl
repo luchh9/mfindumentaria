@@ -10,7 +10,7 @@
                 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
                 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
                 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-                <link rel="stylesheet" href="css/estilo.css">
+                <link rel="stylesheet" href="css/style.css">
 	            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	            <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -19,6 +19,4 @@
 
                 <title>{$titulo}</title>
             </head>
-            <body>
-
-            {$titulo}       
+            <body>     

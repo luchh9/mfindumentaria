@@ -1,15 +1,15 @@
 {include file="header.tpl"}
     
-                    <h1>bienvenido {$nombreusuario}</h1>
+                    <h1>Bienvenido {$nombreusuario}</h1>
                     
                     <h2>{$articulo->nombre}</h2>
 
                     <li>Precio: ${$articulo->precio}</li>
 
 
-                            {foreach from=$imagenes item=img}
-            <img src="{$img->path}" alt="" height="15%" width="15%">
-        {/foreach}
+                    {foreach from=$imagenes item=img}
+                        <img src="{$img->path}" alt="" height="15%" width="15%">
+                    {/foreach}
                     
                     <div id=divcomentarios data-adm={$user} data-user={$nombreusuario} data-id={$articulo->id_articulo}>  
                         

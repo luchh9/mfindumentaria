@@ -28,16 +28,15 @@ function getcomentarios() {
         if (comentarios != null) {
             app.comentarios = comentarios;
             getpromedio();
-
         }
     getimagenes();
     })
     .catch(error => console.log(error));
 }
-console.log(adm);
-if (adm != 1) {
-      document.querySelector("#form-comentario").addEventListener('submit', addcomentario);
-}
+    console.log(adm);
+    if (adm != 1) {
+        document.querySelector("#form-comentario").addEventListener('submit', addcomentario);
+    }
 
 async function deleteComentario(id) {
     
@@ -85,7 +84,7 @@ function getpromedio() {
     fetch("http://localhost/proyectos/mfindumentaria/api/comentarios/promedio/" + articulo)
     .then(response => response.json())
     .then(promedio=> {
-        app.promedio= promedio;
+        app.promedio = promedio;
     })
     .catch(error => console.log(error));
 }
